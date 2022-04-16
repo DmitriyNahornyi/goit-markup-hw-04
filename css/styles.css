@@ -73,6 +73,9 @@ body {
 
 .header {
     border-bottom: 1px solid #ECECEC;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-head {
@@ -225,9 +228,12 @@ body {
 }
 
 .footer {
-    background-color: var(--background-color);
     padding-top: 60px;
     padding-bottom: 60px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--background-color);
 }
 
 .footer-adress li:not(:first-child) {
@@ -371,6 +377,9 @@ body {
 }
 
 .command {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--second-bg);
 }
 
@@ -549,4 +558,19 @@ body {
 
 .twitter {
     background-color: var(--accent-color);
+}
+
+.overlay-fourth {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--background-color);
+
+}
+
+.overlay-third {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--background-color);
 }
