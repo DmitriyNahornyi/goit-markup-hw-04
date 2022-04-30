@@ -123,6 +123,8 @@ body {
 }
 
 .contacts-link {
+    display: flex;
+    text-align: center;
     padding-top: 32px;
     padding-bottom: 31px;
     font-weight: 500;
@@ -187,7 +189,8 @@ body {
     
 }
 
-.portfolio-main .item:hover {
+.portfolio-link:hover,.portfolio-link:focus {
+    display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -230,9 +233,6 @@ body {
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
     background-color: var(--background-color);
 }
 
@@ -285,6 +285,9 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .main-title {
@@ -429,8 +432,7 @@ body {
 
 .command-link {
     display: flex;
-    padding-top: 16px;
-    margin: 0;
+    margin-top: 16px;
     justify-content: center;
 }
 
@@ -455,7 +457,7 @@ body {
     fill: var(--primary-text-color);
 }
 
-.command-link-bg:hover {
+.command-link-bg:hover,.command-link-bg:focus {
     fill: var(--primary-white);
     background-color: #2196F3;
 }
@@ -470,10 +472,7 @@ body {
 
 .clients-link {
     display: flex;
-    padding: 0;
     margin-top: 50px;
-    margin-bottom: 0;
-    justify-content: center;
 }
 
 .clients-link-bg {
@@ -499,7 +498,7 @@ body {
     margin-right: 30px;
 }
 
-.clients-link-bg:hover {
+.clients-link-bg:hover,.clients-link-bg:focus {
     fill: var(--accent-color);
     border-color: var(--accent-color);
 }
@@ -514,13 +513,11 @@ body {
     Font-size: 14px;
     Line-height: 16px;
     color: var(--primary-white);
-    margin-top: 12px;
 }
 
-.footer-main {
+.footer-possittion {
     display: flex;
-    text-align: left;
-    justify-content: flex-start;
+    align-items: baseline;
 }
 
 .social {
@@ -556,7 +553,7 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.twitter {
+.social-link-bg:hover,.social-link-bg:focus {
     background-color: var(--accent-color);
 }
 
